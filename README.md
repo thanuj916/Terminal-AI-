@@ -5,7 +5,7 @@ General WorkFlow :
   Terminal Input --> Shell --> OS ( Kernel ) --> Output Display 
 
 AI WorkFlow :
-  Prompt --> LLM (generates cmd based on query) --> Verification ( for safety ) --> OS ( Kernel, not with direct OS system interaction but creates a subprocess such that output is avaiable to LLM to display ) --> Output Display 
+  Prompt --> LLM (generates cmd based on query) --> Verification ( for safety ) --> Shell --> OS ( Kernel, not with direct OS system interaction but creates a subprocess such that output is avaiable to LLM to display ) --> Output Display 
 
 *Note* -- Direct interaction with OS doesn't give the response to LLM , it sends to ternimal. this process is not suited for output display as it gives only status code and error handling. 
 
